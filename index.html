@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div id="top">
+        <div id="heading">
+            <h2>Programming Quiz - Test your knowledge with basic questions</h2>
+            <h4>Ready? let's goo!🏃‍♀️‍➡️</h4>
+        </div>
+        <div id="topRight">
+            <button id="mode" class="lightMode">Light mode</button>
+        </div>
+    </div>
+
+
+
+    <div class="questions">
+        <div class="question">
+            <h4>1.- Which one is <u>not</u> a programming language?</h4>
+            <input class="option_btn" type="radio" name="firstQ" id="1A" value=0>
+            <label class="option" for="1A">Rust</label> <br>
+
+            <input class="option_btn" type="radio" name="firstQ" id="1B" value=0>
+            <label class="option" for="1B">JS</label> <br>
+
+            <input class="option_btn" type="radio" name="firstQ" id="1C" value=1>
+            <label class="option" for="1C">Baldor</label> <br>
+
+            <input class="option_btn" type="radio" name="firstQ" id="1D" value=0>
+            <label class="option" for="1D">Assembly</label> <br>
+
+        </div>
+
+        <div class="question">
+            <h4>2.- Is HTML a programming language?</h4>
+            <input class="option_btn" type="radio" name="secondQ" id="2A" value=0>
+            <label class="option" for="2A">Yeah</label> 
+
+            <input class="option_btn" type="radio" name="secondQ" id="2B" value=1>
+            <label class="option" for="2B">Not really</label>
+        </div>
+
+        <div class="question">
+            <h4>3.- Which one of the following C++ code snippets is correct?</h4>
+            <input class="option_btn" type="radio" name="thirdQ" id="3A" value=0>
+            <label class="option" for="3A">String username = "Lnei10";</label> <br>
+
+            <input class="option_btn" type="radio" name="thirdQ" id="3B" value=0>
+            <label class="option" for="3B">char x = "j";</label> <br>
+
+            <input class="option_btn" type="radio" name="thirdQ" id="3C" value=0>
+            <label class="option" for="3C">int weight = 15.8;</label> <br>
+
+            <input class="option_btn" type="radio" name="thirdQ" id="3D" value=1>
+            <label class="option" for="3D">double y = 1.5e-12;</label> <br>
+        </div>
+
+        <div class="question">
+            <h4>4.- Which of the following options matches the definition of a pointer?</h4>
+            <input class="option_btn"  type="radio" name="fourthQ" id="4A" value=1>
+            <label class="option" for="4A">A variable that stores a memory adress</label> <br>
+
+            <input class="option_btn"  type="radio" name="fourthQ" id="4B" value=0>
+            <label class="option" for="4B">An iterator that looks for a specific value</label> <br>
+
+            <input class="option_btn"  type="radio" name="fourthQ" id="4C" value=0>
+            <label class="option" for="4C">A built-in function that is present in some programming languages</label> <br>
+
+            <input class="option_btn"  type="radio" name="fourthQ" id="4D" value=0>
+            <label class="option" for="4D">None of the above</label> <br>
+        </div>
+
+        <div class="question">
+            <h4>5.- Which of the following options matches the definition of a function?</h4>
+            <input class="option_btn"  type="radio" name="fifthQ" id="5A" value=0>
+            <label class="option" for="5A">A variable able to store extremely big numbers</label> <br>
+
+            <input class="option_btn"  type="radio" name="fifthQ" id="5B" value=1>
+            <label class="option" for="5B">A block of reusable code that performs a specific task</label> <br>
+
+            <input class="option_btn"  type="radio" name="fifthQ" id="5C" value=0>
+            <label class="option" for="5C">A block of code that repeats itself until a specification is met</label> <br>
+
+            <input class="option_btn" type="radio" name="fifthQ" id="5D" value=0>
+            <label class="option" for="5D">None of the above</label> <br>
+            <br>
+            <br>
+        </div>
+
+        
+
+
+        <div id="bottom">
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <div id="scorePart">
+            <h3 id="score_msg" class="off"></h3>
+            <h3 id="score" class="off"></h3>
+            
+            
+        </div>
+        
+
+    </div>
+    <script src="behavior.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+#heading{
+    text-align: center;
+}
+
+.questions{
+    padding-left: 5em;
+}
+
+.option:hover{
+    background-color: rgb(255, 237, 168);
+    border-radius: 20%;
+    zoom: 1.1;
+}
+
+input[type="radio"] {
+    accent-color: rgb(116, 7, 14) ;
+}
+
+#submitBtn{
+    
+    border-radius: 20%;
+    font-size: 1.2em;
+    padding: 0.8em;
+    font-family: monospace;
+    border: 2px solid rgb(116, 7, 14);
+    background-color: rgb(240, 237, 168);
+}
+
+#submitBtn:hover{
+    zoom: 1.1;
+    font-weight: bold;
+}
+
+#bottom{
+    text-align: center;
+}
+
+#topRight{
+    text-align: right;
+    padding-right: 4em;
+}
+
+.darkOption {
+    color: rgb(240, 237, 168);
+}
+
+.darkBackground {
+    background-color: rgba(0, 0, 0, 0.795);
+}
