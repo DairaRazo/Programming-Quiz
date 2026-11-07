@@ -37,4 +37,9 @@ submitButton.addEventListener('click', (e) => {
         console.log("conditional statements are working fine!")
  
     }
+
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
 });
