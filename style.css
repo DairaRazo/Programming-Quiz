@@ -2,14 +2,43 @@
     text-align: center;
 }
 
+.q{
+    font-size: 1.3em;
+}
+
+.scoreLight{
+    color: black;
+}
+
+.scoreDark{
+    color: #a1d471;
+}
+
 .questions{
     padding-left: 5em;
 }
 
-.option:hover{
+.optionL{
+    font-size: 1.2em;
+    color: black;
+}
+
+.optionD{
+    font-size: 1.2em;
+    color: #71a6d4;
+}
+
+.optionL:hover{
     background-color: rgb(255, 237, 168);
     border-radius: 20%;
     zoom: 1.1;
+}
+
+.optionD:hover{
+    background-color: #b595d8;
+    border-radius: 20%;
+    zoom: 1.1;
+    color: black;
 }
 
 input[type="radio"] {
@@ -17,7 +46,6 @@ input[type="radio"] {
 }
 
 #submitBtn{
-    
     border-radius: 20%;
     font-size: 1.2em;
     padding: 0.8em;
@@ -47,3 +75,4 @@ input[type="radio"] {
 .darkBackground {
     background-color: rgba(0, 0, 0, 0.795);
 }
+

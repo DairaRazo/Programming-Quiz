@@ -7,6 +7,84 @@ let total;
 //The light and dark mode is still an unfinished feature.
 const mode = document.querySelector("#mode");
 
+mode.addEventListener('click', ()=>{
+    const topWords = document.querySelectorAll(".topWords");
+    const questions = document.querySelectorAll('.q');
+    const option = document.querySelectorAll(".optionL, .optionD");
+    const op_btn = document.querySelectorAll("input[type='radio']");
+    const scorePart = document.querySelector("#scorePart");
+
+    mode.classList.toggle("lightMode");
+    mode.classList.toggle("darkMode");
+
+    if(mode.classList.contains("lightMode")){
+        mode.textContent = "Light Mode";
+        document.body.style.backgroundColor = "white";
+
+        topWords.forEach(w => {
+            w.style.color = "black";
+        })
+
+        questions.forEach(q => {
+            q.style.color = "black";
+        })
+
+        option.forEach(op => {
+            //#5786af
+            op.classList.add("optionL");
+            op.classList.remove("optionD");
+            console.log(op.classList);
+            console.log("options in light activated");
+        })
+
+        op_btn.forEach(op_b => {
+            op_b.style.accentColor = "rgb(116, 7, 14)";
+        })
+
+        scorePart.classList.add("scoreLight");
+        scorePart.classList.remove("scoreDark");
+
+
+        
+
+
+    }else{
+
+        mode.textContent = "Dark Mode";
+
+        document.body.style.backgroundColor = "#121212";
+
+        topWords.forEach(w => {
+            w.style.color = "#beade7";
+        })
+
+        questions.forEach(q => {
+            q.style.color = "white";
+        })
+
+        option.forEach(op => {
+             //#5786af
+            op.classList.add("optionD");
+            op.classList.remove("optionL");
+            console.log(op.classList);
+            console.log("options in dark mode activated");
+        })
+
+        op_btn.forEach(op_b => {
+            op_b.style.accentColor = "rgb(133, 1, 133)";
+        })
+
+        scorePart.classList.add("scoreDark");
+        scorePart.classList.remove("scoreLight");
+
+
+
+
+
+
+    }
+})
+
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     total = 0;
