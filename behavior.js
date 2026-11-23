@@ -4,13 +4,13 @@ const score_msg = document.querySelector("#score_msg");
 const score = document.querySelector("#score");
 let total;
 
-//The light and dark mode is still an unfinished feature.
+//Dark and light mode logic
 const mode = document.querySelector("#mode");
 
 mode.addEventListener('click', ()=>{
-    const topWords = document.querySelectorAll(".topWords");
-    const questions = document.querySelectorAll('.q');
-    const option = document.querySelectorAll(".optionL, .optionD");
+    const topWords = document.querySelectorAll(".topWords"); //title and phrase that appears at the top of the page
+    const questions = document.querySelectorAll('.q'); 
+    const option = document.querySelectorAll(".optionL, .optionD"); 
     const op_btn = document.querySelectorAll("input[type='radio']");
     const scorePart = document.querySelector("#scorePart");
 
@@ -30,7 +30,6 @@ mode.addEventListener('click', ()=>{
         })
 
         option.forEach(op => {
-            //#5786af
             op.classList.add("optionL");
             op.classList.remove("optionD");
             console.log(op.classList);
@@ -63,7 +62,7 @@ mode.addEventListener('click', ()=>{
         })
 
         option.forEach(op => {
-             //#5786af
+
             op.classList.add("optionD");
             op.classList.remove("optionL");
             console.log(op.classList);
@@ -77,13 +76,10 @@ mode.addEventListener('click', ()=>{
         scorePart.classList.add("scoreDark");
         scorePart.classList.remove("scoreLight");
 
-
-
-
-
-
     }
 })
+
+//Submit the answers to check the score. 
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -116,6 +112,7 @@ submitButton.addEventListener('click', (e) => {
  
     }
 
+    //Scroll to the bottom of the page to see the score.
     window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth"
